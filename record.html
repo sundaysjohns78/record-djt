@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Record</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="logoutBtn" style="float:right;">Logout</button>
+    <h1 id="recordTitle"></h1>
+
+    <div class="section">
+      <button id="addTaskBtn">Add Task</button>
+      <ul id="taskList"></ul>
+      <button id="saveTasksBtn">Save Tasks</button>
+      <p id="taskTimestamp"></p>
+    </div>
+
+    <div class="section">
+      <button id="addDiaryBtn">Add Diary / Journal</button>
+      <textarea id="diaryInput" placeholder="Write your thoughts here..."></textarea>
+      <button id="saveDiaryBtn">Save Diary</button>
+      <p id="diaryTimestamp"></p>
+    </div>
+
+    <div class="section">
+      <button id="exportTxtBtn">📄 Export to TXT</button>
+    </div>
+
+    <a href="index.html">⬅ Back to Home</a>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
